@@ -7,6 +7,23 @@
 using namespace std;
 using namespace cv;
 
+/**
+ * @brief Main function demonstrating OpenCV blob detection, rotated rectangle drawing, and timing operations.
+ *
+ * This function showcases several OpenCV functionalities:
+ * 1. Blob Detection: Uses SimpleBlobDetector to detect and visualize keypoints in an image.
+ * 2. Rotated Rectangle: Creates and draws a rotated rectangle with labeled vertices.
+ * 3. Performance Measurement: Demonstrates time tracking using TickMeter for total execution and average iteration times.
+ *
+ * Key operations include:
+ * - Reading/writing SimpleBlobDetector parameters from/to an XML file
+ * - Loading an image and detecting blob keypoints
+ * - Drawing keypoints and circles on the detected blobs
+ * - Creating a rotated rectangle and visualizing its vertices
+ * - Measuring code execution time using TickMeter
+ *
+ * @return int Returns 0 to indicate successful program execution
+ */
 int main()
 {
     //! [Algorithm]
