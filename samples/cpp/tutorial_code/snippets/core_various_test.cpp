@@ -38,6 +38,8 @@ int main()
     waitKey(0);
     //! [Algorithm]
 
+    // add proper consts
+
     const char * vertex_names[4] {"0", "1", "2", "3"};
 
     //! [RotatedRect_demo]
