@@ -26,6 +26,7 @@ int main()
         fs_write.release();
     }
 
+    // use correct path
     Mat result, image = imread("../data/detect_blob.png", IMREAD_COLOR);
     vector<KeyPoint> keypoints;
     sbd->detect(image, keypoints, Mat());
