@@ -28,6 +28,10 @@ int main()
 
     // use correct path
     Mat result, image = imread("../data/detect_blob.png", IMREAD_COLOR);
+    if (image.empty()) {
+        cerr << "Error: Could not load image. Please check the file path." << endl;
+        return -1;
+    }
     vector<KeyPoint> keypoints;
     sbd->detect(image, keypoints, Mat());
 
